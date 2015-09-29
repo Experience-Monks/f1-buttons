@@ -32,6 +32,7 @@ addMoveAndFade(ui.defStates, {
 });
 
 ui.init('out');
+ui.go('idle');
 
 
 container.addEventListener('mouseover', function() {
@@ -40,6 +41,10 @@ container.addEventListener('mouseover', function() {
 
 container.addEventListener('mouseout', function() {
   ui.go('idle');
+});
+
+container.addEventListener('click', function() {
+  ui.go('out');
 });
 
 
