@@ -17,7 +17,7 @@ var ui = arrowButton( {
   textHeight: 18,
 
   targets: {
-    bg1: getBG('#F00'),
+    bg1: getBG('#CAFE00'),
     bg2: getBG('#0F0'),
     text: getText('Hello World'),
     arrow: getArrow()
