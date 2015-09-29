@@ -7,8 +7,8 @@ var width = 500;
 var height = 30;
 
 var ui = arrowButton( {
-  width: 500,
-  height: 30,
+  width: width,
+  height: height,
 
   arrowWidth: 20,
   arrowHeight: 20,
