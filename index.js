@@ -31,7 +31,7 @@ addMoveAndFade(ui.defStates, {
   to: 'idle'
 });
 
-ui.update();
+ui.init('out');
 
 
 container.addEventListener('mouseover', function() {
