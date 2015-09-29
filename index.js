@@ -1,4 +1,5 @@
 var arrowButton = require('./lib/arrowButton');
+var addMoveAndFade = require('./lib/addMoveAndFade');
 
 var container = document.body;
 
@@ -24,6 +25,14 @@ var ui = arrowButton( {
 
   parsers: require('f1-dom')
 });
+
+addMoveAndFade(ui.defStates, {
+  from: 'out',
+  to: 'idle'
+});
+
+ui.update();
+
 
 container.addEventListener('mouseover', function() {
   ui.go('rolled');
