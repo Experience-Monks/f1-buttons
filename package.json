@@ -1,0 +1,15 @@
+{
+  "name": "f1-buttons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikko Haapoja <me@mikkoh.com>",
+  "license": "ISC",
+  "dependencies": {
+    "f1": "^5.1.2",
+    "f1-dom": "^3.0.0"
+  }
+}
