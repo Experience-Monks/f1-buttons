@@ -38,8 +38,8 @@ function getBG(color) {
   var el = document.createElement('div');
 
   el.style.backgroundColor = color;
-  el.style.width = 200 + 'px';
-  el.style.height = 30 + 'px';
+  el.style.width = width + 'px';
+  el.style.height = height + 'px';
 
   container.appendChild(el);
 
