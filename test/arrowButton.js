@@ -1,12 +1,12 @@
-var arrowButton = require('./lib/arrowButton');
-var addMoveAndFade = require('./lib/addMoveAndFade');
+var arrowButton = require('../arrowButton');
+var f1 = require('f1');
 
 var container = document.body;
 
 var width = 500;
 var height = 30;
 
-var ui = arrowButton( {
+var ui = f1(arrowButton( {
   width: width,
   height: height,
 
@@ -24,13 +24,7 @@ var ui = arrowButton( {
   },
 
   parsers: require('f1-dom')
-});
-
-addMoveAndFade(ui.defStates, {
-  from: 'out',
-  to: 'idle'
-});
-
+}));
 ui.init('out');
 ui.go('idle');
 
@@ -42,11 +36,6 @@ container.addEventListener('mouseover', function() {
 container.addEventListener('mouseout', function() {
   ui.go('idle');
 });
-
-container.addEventListener('click', function() {
-  ui.go('out');
-});
-
 
 function getBG(color) {
   var el = document.createElement('div');

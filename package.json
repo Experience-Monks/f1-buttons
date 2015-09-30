@@ -9,6 +9,9 @@
   "author": "Mikko Haapoja <me@mikkoh.com>",
   "license": "ISC",
   "dependencies": {
+    "merge": "^1.2.0"
+  },
+  "devDependencies": {
     "f1": "^5.1.2",
     "f1-dom": "^3.0.0"
   }
